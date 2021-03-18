@@ -6,7 +6,105 @@
   <link rel="stylesheet" href="main.css">
   <title>MedDigital</title>
 </head>
+<style>
+.container{
+  width:80%;
+  margin: 0 auto;
+}
 
+.details{
+  text-align: center;
+}
+
+.details h2{
+  color:#243238;
+  font-size:50px;
+  margin: 0;
+}
+
+.main-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+
+}
+.box > * {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.box::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.box:hover::before{
+  width: 95%;
+  height: 95%;
+  transition: all ease .50s;
+}
+
+hr{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: block;
+  width: 70%;
+  border: 1px solid rgba(255,255,255, 0.1);
+
+}
+
+.box a{
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color:#D50000 ;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin-top: 25px;
+  display: inline-block;
+  font-weight: 600 ;
+}
+.box a:hover{
+  background-color:#243238 ;
+}
+
+.box .white-border{
+  border: 1px solid #ffffff;
+}
+
+
+.box-grey{
+  background-color:#aaaaaa ;
+}
+
+.box-red{
+  background-color:#fcd95e;
+}
+
+.in {
+    display:inline;
+}
+</style>
 <body>
 
   <div id="header">
@@ -16,39 +114,43 @@
 
 <div class = "topnav">
   <ul>
-   <li><a href="index.html">Home</a></li>
-   <li><a href="about.html">About</a></li>
-   <li><a class="active" href="services.html" class="active">Services</a></li>
-   <li><a href="updates.html">Updates</a></li>
-   <li><a href="WorksCited.html">Credits</a></li>
+   <li class="in"><a href="index.html">Home</a></li>
+   <li class="in"><a href="about.html">About</a></li>
+   <li class="in"><a class="active" href="services.html" class="active">Services</a></li>
+   <li class="in"><a href="updates.html">Updates</a></li>
+   <li class="in"><a href="pricing.html">Pricing</a></li>
+   <li class="in"><a href="WorksCited.html">Credits</a></li>
    <input type="text" placeholder="Search...">
  </ul>
 </div>
 
-<div class="main-services">
-
+<div class="main-services" class="container-fluid text-center">
       <h1> <u>Services Offered</u> </h1>
-      <p></p>
-      <p></p>
+      <br>
 
-      <h1>Digital Appointments</h1>
-      <p>
-          Users can easily book an appointment with an actual physician through our company.
-      </p>
+      <div class="main-box">
+        <div class="box box-grey">
+          <h2>Digital Appointment</h2>
+          <hr>
+          <p>Users can easily book an appointment with an actual physician through our company.</p>
+        </div>
+        <div class="box box-red">
+          <h2>Secure Messaging</h2>
+          <hr>
+          <p>Our company lets users message physicians to ask simple questions regarding their help. It is advised to use this service if you have very
+            simple question that you want answered as soon as possible.</p>
+        </div>
+        <div class="box box-grey">
+          <h2>Recorded Meetings</h2>
+          <hr>
+          <p>When you have an appointment with a physician through our company, your meeting will be recorded and stored so you can later visit it.</p>
+        </div>
+        <div class="box box-red">
+          <h2>Helpdesk</h2>
+          <hr>
+          <p>Users can contact our helpdesk that is available during our specified company hours. They can ask questions about services, about how the company works and more.</p>
+        </div>
+      </div>
 
-      <h1>Secure Messaging</h1>
-      <p>
-            Our company lets users message physicians to ask simple questions regarding their help. It is advised to use this service if you have very
-            simple question that you want answered as soon as possible.
-      </p>
-
-      <h1>Recorded Meetings</h1>
-      <p>
-          When you have an appointment with a physician through our company, your meeting will be recorded and stored so you can later visit it.
-     </p>
-
-      <h1>Helpdesk</h1>
-      <p>
-          Users can contact our helpdesk that is available during our specified company hours. They can ask questions about services, about how the company works and more.
-     </p>
 </div>
+</body>
