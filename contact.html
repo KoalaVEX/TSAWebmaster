@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>MedDigital</title>
+</head>
+<style>
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+.in {
+    display:inline;
+}
+
+
+
+</style>
+<body>
+    <div id="header">
+        <h1>MedDigital</h1>
+          <h4>Revolutionizing the online medicine industry, one patient at a time</h4>
+      </div>
+
+    <div class = "topnav">
+        <ul>
+         <li class="in"><a href="index.html">Home</a></li>
+         <li class="in"><a href="about.html">About</a></li>
+         <li class="in"><a  href="services.html">Services</a></li>
+         <li class="in"><a href="updates.html">Updates</a></li>
+         <li class="in"><a href="pricing.html">Pricing</a></li>
+         <li class="in"><a class="active" href="contact.html">Contact</a></li>
+         <li class="in"><a href="WorksCited.html">Credits</a></li>
+         <input type="text" placeholder="Search...">
+       </ul>
+    </div>
+
+    <h2 style="text-align:center">Contact</h2>
+<p style="text-align:center">Fill out the form to contact us or email us at meddigital@gmail.com. To reach our helpdesk line, call 123-456-7890.</p>
+<form>      
+    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+    <input type="submit" value="SUBMIT"/>
+  </form>
+
+
+
+</body>
