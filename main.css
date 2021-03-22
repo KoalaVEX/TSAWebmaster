@@ -99,3 +99,7 @@ p {
 .chatbot{
   float:right;
 }
+
+#center {
+  width: inherit;
+}
