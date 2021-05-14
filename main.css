@@ -153,6 +153,7 @@ p {
 
 .majorText{
   max-width: 650px;
-  margin: 250px 100px;
+  padding-top: 8%;
+  float: left;
   color: black;
 }
