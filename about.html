@@ -10,7 +10,7 @@
 
 #sectionOne {
   height: 300px;
-  width: 1600px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   background-color: #ed8585;
@@ -50,7 +50,20 @@
   font-size: 30px;*/
 }
 
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
 </style>
+
 </head>
 
 
@@ -58,7 +71,7 @@
 
 <header>
   <div class="container">
-    <img src = "BiggerLogo.png" alt = "logo" class = "logo" width ="200" height="45">
+    <img src = "BiggerLogo.png" alt = "logo" class = "logo" width ="200" height="65">
 
     <nav>
       <ul>
@@ -81,7 +94,7 @@
   <h2> Our Origins </h2>
   <p> With the COVID-19 pandemic disrupting many of our usual day-to-day activities, it is no surprise that the medicine industry has also been impacted. In addition, COVID-19 has resulted in excessive pressure on medical facilities to the point where they have to choose which patients they can take, and sometimes they even have to discharge patients. MedDigital strives to bridge gaps between patients and medical professionals, and does so in a customer-centric manner. </p>
 </div>
-   
+
 
 <h2> Meet the Team </h2>
 <div class="grid-container">
@@ -101,7 +114,7 @@
     </div>
   </div>
 
-  <div class = "box" id = "sectionTwo" style="float: right"> 
+  <div class = "box" id = "sectionTwo" style="float: right">
     <p> Jennifer Adams - Chief Financial Officer</p>
     <div id="center">
       <p></p>
