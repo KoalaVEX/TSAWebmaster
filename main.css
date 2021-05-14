@@ -1,20 +1,22 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightblue;
 }
 
 .container{
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-}
-
-header {
-  background: #fcd95e;
 }
 
 header::after {
   content: '';
   display: table;
   clear: both;
+  z-index: 1;
 }
 
 .logo {
@@ -38,6 +40,7 @@ nav li {
   padding-top: 23px;
 
   position: relative;
+  z-index: 1;
 }
 
 nav a {
@@ -69,7 +72,6 @@ nav a:hover::before {
 }
 
 h1 {
-  color: white;
   text-align: center;
 }
 
@@ -79,7 +81,6 @@ h2 {
 }
 
 h4 {
-  color: white;
   text-align: center;
 }
 
@@ -102,4 +103,56 @@ p {
 
 #center {
   width: inherit;
+}
+
+.background {
+  background-image: url('');
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#homepageVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.75;
+  z-index: -2;
+}
+
+
+.Homepagee {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #f1f1f1;
+  float: center;
+  color: black;
+}
+
+
+.ChatBotButton{
+  float:right;
+  padding-left: 1000px;
+}
+
+.companyIntroduction{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.majorText{
+  max-width: 650px;
+  margin: 250px 100px;
+  color: black;
 }

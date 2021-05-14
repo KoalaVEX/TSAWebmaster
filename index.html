@@ -4,20 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <script src="script.js"></script>
   <title>MedDigital</title>
+
+  <script type="text/javascript">
+    if (!Array.isArray(window.qbOptions)) {
+      window.qbOptions = []
+    }
+    window.qbOptions.push({"baseUrl":"https://botsrv2.com","use":"V895xby0VdEeqZYd/LO9oPr9YDwrpvqRG"});
+  </script>
+  <script type="text/javascript" src="https://static.botsrv2.com/website/js/widget2.de665ac4.min.js" integrity="sha384-J8ksFqlmq84q11PhlQXeZi8G9LLa2QG4/rwpoyQMzGId9N90rhOl/NuE3RxlzPlC" crossorigin="anonymous" defer data-no-minify="1"></script>
 </head>
 <style>
 
 #homePageSectionOne {
   height: 300px;
+  padding-top: 100px;
   padding-right: 300px;
-  padding-left: 325px;
   padding-bottom: 0px;
 }
 
 #sectionTwo {
+  height: auto;
+  width: auto;
   height: 600px;
   background-color: #aaaaaa;
+}
+
+#ChatBotButton{
+  float: right;
+}
+
+#chatBot{
+  float:right;
 }
 
 </style>
@@ -26,7 +45,7 @@
 <body>
 <header>
   <div class="container">
-    <img src = "BiggerLogo.png" alt = "logo" class = "logo" width ="200" height="45">
+    <img src = "BiggerLogo.png" alt = "logo" class = "logo" width ="200" height="65">
 
     <nav>
       <ul>
@@ -43,28 +62,59 @@
   </div>
 </header>
 
-<div id="header">
+<div class="companyIntroduction">
+  <div class="majorText">
     <h1>MedDigital</h1>
     <h4>Revolutionizing the online medicine industry, one patient at a time</h4>
+  </ul>
+</div>
+</div>
+<div class="homepageVideo">
+  <video width="100%" height="auto"src="video2.mp4" muted loop autoplay id="homepageVideo"></video>
 </div>
 
-<div id="header">
-  <div id="center">
-    <p></p>
-    <div class="GIFLarge">
-      <img src="Medicine.GIF" alt="Medical Telecommunications Company Name" class="center">
-    </div>
-  </div>
-</div>
+<button id="ChatBotButton" onclick="pageLoad()"onclick="myFunction()">ChatBot</button>
 
-<div class="chatbot">
+<div id="chatBot">
   <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/17349de3-a9f4-457f-bd11-9abb6b01a13a"></iframe>
 </div>
 
-<div class = "Homepage" id = "homePageSectionOne">
-  <h2> What we do </h2>
-  <p> We are MedDigital, a Medicine Telecommunications Company that offers a variety of services. We hope to help you during these difficult times. Ready to get started? Choose one of the pages at the top to learn more, or answer a few questions asked by the chatbot on the right so that we can help you find what you're looking for. </p>
+<script>
+function openForm() {
+  document.getElementById("ChatBotButton").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("ChatBotButton").style.display = "none";
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("chatBot");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<script>
+      function pageLoad()
+{
+   myFunction();
+}
+
+pageLoad();
+
+</script>
+
+<div class = "box" id = "homePageSectionOne">
+    <h2> What we do </h2>
+    <p> We are MedDigital, a Medicine Telecommunications Company that offers a variety of services. We hope to help you during these difficult times. Ready to get started? Choose one of the pages at the top to learn more, or answer a few questions asked by the chatbot on the right so that we can help you find what you're looking for. </p>
 </div>
+
 
 </div>
 
