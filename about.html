@@ -9,103 +9,82 @@
 <style>
 
 #sectionOne {
-  height: 300px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  
+  margin: auto;
   background-color: #ed8585;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  
 }
 
 #sectionTwo {
   height: 700px;
   width: 350px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #aaaaaa;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-
+  margin-top: 50px;
 }
 
 .box:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+
 }
 
+.in {
+    display:inline;
+}
 
 .grid-container {
-  /*display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .grid-container > div {
-  /*text-align: center;
-  padding: 20px 0;
-  font-size: 30px;*/
-}
-
-@media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
-    padding: 10px;
-  }
+  margin: auto;
 }
 
 </style>
-
 </head>
 
 
 <body>
 
-<header>
-  <div class="container">
-    <img src = "BiggerLogo.png" alt = "logo" class = "logo" width ="200" height="65">
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="updates.html">Updates</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="diseases.html">Illnesses</a></li>
-        <li><a href="WorksCited.html">Credits</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container">
+      <img src = "BiggerLogo.png" alt = "logo" class = "logo" width ="200" height="65">
+  
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="diseases.html">Illnesses</a></li>
+          <li><a href="WorksCited.html">Credits</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
 
 <div class = "box" id = "sectionOne">
   <h2> Our Origins </h2>
   <p> With the COVID-19 pandemic disrupting many of our usual day-to-day activities, it is no surprise that the medicine industry has also been impacted. In addition, COVID-19 has resulted in excessive pressure on medical facilities to the point where they have to choose which patients they can take, and sometimes they even have to discharge patients. MedDigital strives to bridge gaps between patients and medical professionals, and does so in a customer-centric manner. </p>
+  <br>
 </div>
-
+   
 
 <h2> Meet the Team </h2>
 <div class="grid-container">
-<div class = "box" id = "sectionTwo" >
+  <div class = "box" id = "sectionTwo" >
     <p> Bob Smith - Founder/Chief Executive Officer</p>
     <div id="center">
       <img  src="BobSmith.jpg" alt="Medical Telecommunications Company Name" class="center" style="width:250px;height:308px">
       <p > Bob Smith is a world-renowned medical professional who has helped run numerous businesses in the past. He started this business in order to fulfill an unmet need in his local community, a lack of online medical companies. </p>
       <p></p>
     </div>
-</div>
+  </div>
   <div class = "box" id = "sectionTwo">
     <p> Susan Kim - Chief Operating Officer</p>
     <div id="center">
@@ -113,22 +92,17 @@
       <p> Susan Kim is an accomplished executive who has previously served on the board of directors of some of the largest medical companies. A close acquaintance of Bob, she joined as a way to give back to the community with the rise of COVID-19. </p>
     </div>
   </div>
-
-  <div class = "box" id = "sectionTwo" style="float: right">
-    <p> Jennifer Adams - Chief Financial Officer</p>
+  <div class = "box" id = "sectionTwo"  style="float: right">
+    <p>Jennifer Adams - Chief Financial Officer</p>
     <div id="center">
-      <p></p>
       <img src="JenniferAdams.jpg" alt="Medical Telecommunications Company Name" style="width:300px;height:308px" class="center">
-      <p></p>
       <p> Jennifer Adams graduated with a bachelors degree in Finance from New York University as well as a bachelors degree in Biology. She then went on to work on Wall Street, though her passion for biology has brought her here to manage the finances of MedDigital. </p>
     </div>
   </div>
   <div class = "box" id = "sectionTwo">
     <p> Dominic Johnson - Chief Marketing Officer</p>
     <div id="center">
-      <p></p>
       <img src="DominicJohnson.jpg" alt="Medical Telecommunications Company Name" style="width:300px;height:308px" class="center">
-      <p></p>
       <p> Dominic Johnson is an experienced marketing professional who has worked as a salesman and lead salesman in various companies. He looks forward to bringing this expertise to MedDigital to help patients around the world. </p>
     </div>
   </div>
